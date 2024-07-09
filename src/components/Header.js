@@ -11,7 +11,7 @@ const Header = () => {
       <header className=''>
         <div className='container py-2'>
           <div className='row'>
-            <div className='col-2 d-block d-md-none'>
+            <div className='col-2 d-block d-md-none mobile-dropdown'>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                 <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
               </svg>
@@ -30,8 +30,8 @@ const Header = () => {
         </div>
       </header>
 
-      <div className="px-1 px-lg-5">
-        <div className="row">
+      <div className="px-1 px-lg-5 mobile">
+        <div className="d-flex justify-content-between">
           <div className="col-md-6">
             <ul className="list-unstyled text-center d-flex">
               <li>

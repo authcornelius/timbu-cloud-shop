@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
+import Display from '../components/Display'
+// import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -19,7 +21,7 @@ function Home() {
             </div>
 
             <div className='col-5 col-md-3 col-lg-2 col-xl-1'>
-                <div className="input-group mb-3">
+                <div className="input-group mb-3 rounded-5">
                     <input type="search" className="form-control" placeholder="Filter" aria-label="Filter" aria-describedby="button-addon2" />
                     <span className="input-group-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
@@ -30,6 +32,11 @@ function Home() {
                 </div>
             </div>
         </div>
+
+        <Display />
+
+
+        {/* <Footer /> */}
     </div>
   )
 }

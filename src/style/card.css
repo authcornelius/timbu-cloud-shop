@@ -1,0 +1,17 @@
+.card {
+  flex-direction: row;
+}
+.card .title {
+  background-color: red;
+}
+.card .title img {
+  width: 1.5rem;
+  height: 2rem;
+}
+.card h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.card .card-body {
+  padding-bottom: 0;
+}/*# sourceMappingURL=card.css.map */
