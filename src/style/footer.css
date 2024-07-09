@@ -1,1 +1,6 @@
-/*# sourceMappingURL=footer.css.map */
+footer {
+  background-color: green;
+}
+footer li span {
+  font-size: 1rem;
+}/*# sourceMappingURL=footer.css.map */

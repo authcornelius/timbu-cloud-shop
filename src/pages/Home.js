@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Display from '../components/Display'
-// import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -36,7 +36,7 @@ function Home() {
         <Display />
 
 
-        {/* <Footer /> */}
+        <Footer />
     </div>
   )
 }

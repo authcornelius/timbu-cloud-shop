@@ -11,10 +11,12 @@ const Header = () => {
       <header className=''>
         <div className='container py-2'>
           <div className='row'>
-            <div className='col-2 d-block d-md-none mobile-dropdown'>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
+            <div className='col-2 d-block d-md-none mobile-dropdown '>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+                  <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+              </button>
             </div>
 
             <div className='col-8 col-md-12 col-lg-12 text-center'>
@@ -30,7 +32,44 @@ const Header = () => {
         </div>
       </header>
 
-      <div className="px-1 px-lg-5 mobile">
+      <div className="px-1 px-lg-5 d-none d-lg-block">
+        <div className="d-flex justify-content-between">
+          <div className="col-md-6">
+            <ul className="list-unstyled text-center d-flex">
+              <li>
+                <div className='mx-2'>
+                  <img src={Home} alt='Home' />
+                  <h3 className="mt-2 mb-0">Home</h3>
+                </div>
+              </li>
+              <li>
+                <div className='mx-2'>
+                  <img src={Saved} alt='Saved' />
+                  <h3 className="mt-2 mb-0">Saved</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-6 d-flex justify-content-end">
+            <ul className="list-unstyled text-center d-flex">
+              <li>
+                <div className='mx-2'>
+                  <img src={Profile} alt='Profile' />
+                  <h3 className="mt-2 mb-0">Profile</h3>
+                </div>
+              </li>
+              <li>
+                <div className='mx-2'>
+                  <img src={Cart} alt='Cart' />
+                  <h3 className="mt-2 mb-0">Cart</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-1 px-lg-5 mobile collapse navbar-collapse d-lg-none" id="navbarSupportedContent">
         <div className="d-flex justify-content-between">
           <div className="col-md-6">
             <ul className="list-unstyled text-center d-flex">
