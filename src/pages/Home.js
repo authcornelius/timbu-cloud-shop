@@ -8,7 +8,7 @@ function Home() {
     <div>
         <Header />
 
-        <div className='px-4'>
+        <div className='px-4 py-3'>
             <div className='col-12 col-md-6'>
                 <div className="input-group mb-3">
                     <span className="input-group-text">
