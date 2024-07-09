@@ -1,13 +1,21 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Saved from './pages/Saved';
+import Profile from './pages/Profile';
+import Cart from './pages/Cart';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     <h1>
-      <Home />
-     </h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/saved" element={<Saved />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </Router>
   );
 }
 

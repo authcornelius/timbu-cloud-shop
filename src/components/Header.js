@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 import '../style/header.css';
 import Home from '../assets/home.png'
 import Saved from '../assets/Star.png'
@@ -37,32 +38,40 @@ const Header = () => {
           <div className="col-md-6">
             <ul className="list-unstyled text-center d-flex">
               <li>
-                <div className='mx-2'>
-                  <img src={Home} alt='Home' />
-                  <h3 className="mt-2 mb-0">Home</h3>
-                </div>
+                <Link to="/" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Home} alt='Home' />
+                    <h3 className="mt-2 mb-0">Home</h3>
+                  </div>
+                </Link>
               </li>
               <li>
-                <div className='mx-2'>
-                  <img src={Saved} alt='Saved' />
-                  <h3 className="mt-2 mb-0">Saved</h3>
-                </div>
+                <Link to="/saved" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Saved} alt='Saved' />
+                    <h3 className="mt-2 mb-0">Saved</h3>
+                  </div>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="col-md-6 d-flex justify-content-end">
             <ul className="list-unstyled text-center d-flex">
               <li>
-                <div className='mx-2'>
-                  <img src={Profile} alt='Profile' />
-                  <h3 className="mt-2 mb-0">Profile</h3>
-                </div>
+                <Link to="/profile" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Profile} alt='Profile' />
+                    <h3 className="mt-2 mb-0">Profile</h3>
+                  </div>
+                </Link>
               </li>
               <li>
-                <div className='mx-2'>
-                  <img src={Cart} alt='Cart' />
-                  <h3 className="mt-2 mb-0">Cart</h3>
-                </div>
+                <Link to="/cart" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Cart} alt='Cart' />
+                    <h3 className="mt-2 mb-0">Cart</h3>
+                  </div>
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,32 +83,40 @@ const Header = () => {
           <div className="col-md-6">
             <ul className="list-unstyled text-center d-flex">
               <li>
-                <div className='mx-2'>
-                  <img src={Home} alt='Home' />
-                  <h3 className="mt-2 mb-0">Home</h3>
-                </div>
+                <Link to="/" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Home} alt='Home' />
+                    <h3 className="mt-2 mb-0">Home</h3>
+                  </div>
+                </Link>
               </li>
               <li>
-                <div className='mx-2'>
-                  <img src={Saved} alt='Saved' />
-                  <h3 className="mt-2 mb-0">Saved</h3>
-                </div>
+                <Link to="/saved" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Saved} alt='Saved' />
+                    <h3 className="mt-2 mb-0">Saved</h3>
+                  </div>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="col-md-6 d-flex justify-content-end">
             <ul className="list-unstyled text-center d-flex">
               <li>
-                <div className='mx-2'>
-                  <img src={Profile} alt='Profile' />
-                  <h3 className="mt-2 mb-0">Profile</h3>
-                </div>
+                <Link to="/profile" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Profile} alt='Profile' />
+                    <h3 className="mt-2 mb-0">Profile</h3>
+                  </div>
+                </Link>
               </li>
               <li>
-                <div className='mx-2'>
-                  <img src={Cart} alt='Cart' />
-                  <h3 className="mt-2 mb-0">Cart</h3>
-                </div>
+                <Link to="/cart" className="nav-link">
+                  <div className='mx-2'>
+                    <img src={Cart} alt='Cart' />
+                    <h3 className="mt-2 mb-0">Cart</h3>
+                  </div>
+                </Link>
               </li>
             </ul>
           </div>
